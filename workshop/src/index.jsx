@@ -3,13 +3,15 @@ import '../assets/stylesheets/application.scss';
 import React from 'react';
 import ReactDOM from "react-dom/client";
 
-import App from "./components/App";
+import App from './components/App';
 
+// ****** functional component (old way)******
 // const Hello = (props) => {
 //   const { name, job } = props;
 //   return <h1> Hello, {name} and I am a {job}!!! </h1>
 // };
 
+// ****** class component ******
 // class Hello extends React.Component{
 //   render(){
 //     const { name, job } = this.props;

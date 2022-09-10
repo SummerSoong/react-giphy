@@ -1,11 +1,14 @@
 import React from 'react';
 import Gif from "./Gif";
 
-const GifList = () => {
-  const gifIds = ["gG6OcTSRWaSis", "13HgwGsXF0aiGY", "13UZisxBxkjPwI"];
+const GifList = (props) => {
+  const { gifIds, setSelectedId } = props;
   return (
     <div className="gif-list">
-      { gifIds.map((gifId) => <Gif gifId={gifId} />) }
+      {/* jsx{ javascript <jsx {javascript}>} */}
+      { gifIds?.map(
+        (gifId) => <Gif gifId={gifId} setSelectedId={setSelectedId} key={gifId} />
+      )}
     </div>
   );
 };
